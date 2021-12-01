@@ -23,3 +23,8 @@ This results in the narrow width array multiplier always having a larger critica
 
 ## Modularity
 Both designs are essentially the same in terms of modularity as they are very similar in design, however, the additional overhead required to generate the addition units for the narrow width arrray multiplier makes it slightly less modular.
+
+  
+  
+
+*All testing and analysis was performed in Vivado's HLS tools.*
