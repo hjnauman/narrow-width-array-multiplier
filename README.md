@@ -1,5 +1,5 @@
 # narrow-width-array-multiplier
-Verilog implementation of a narrow width array multiplier. The narrow width multiplier is designed to simulate a wide multiplier by breaking a given multiplication unit in half and using multiple of those units in combination with addition units in order to properly simulate what the wide multiplier would be able to accomplish. This can be seen by examining an 8x8 multiplier being generated using the narrow width multiplier approach of breaking the multiplication unit into 4x4 multipliers and using multiple multiplication units as well as 4x4 addition units. An example of this can be seen below: 
+Verilog implementation of a generic nxn narrow width array multiplier. The narrow width multiplier is designed to simulate a wide multiplier by breaking a given multiplication unit in half and using multiple of those units in combination with addition units in order to properly simulate what the wide multiplier would be able to accomplish. This can be seen by examining an 8x8 multiplier being generated using the narrow width multiplier approach of breaking the multiplication unit into 4x4 multipliers and using multiple multiplication units as well as 4x4 addition units. An example of this can be seen below: 
 
 ![8x8 Narrow Width Array Multiplier](/8x8_narrow_width_array_multiplier.jpg?raw=true "Title")
 
