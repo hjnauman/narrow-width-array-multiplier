@@ -1,2 +1,7 @@
 # narrow-width-array-multiplier
-Verilog implementation of a narrow width array multiplier.
+Verilog implementation of a narrow width array multiplier. The narrow width multiplier is designed to simulate a wide multiplier by breaking a given multiplication unit in half and using multiple of those units in combination with addition units in order to properly simulate what the wide multiplier would be able to accomplish. This can be seen by examining an 8x8 multiplier being generated using the narrow width multiplier approach of breaking the multiplication unit into 4x4 multipliers and using multiple multiplication units as well as 4x4 addition units. An example of this can be seen below: 
+
+![8x8 Narrow Width Array Multiplier](relative/path/to/img.jpg?raw=true "Title")
+
+As seen in the example above, for the correct product bits to be generated with this type of multiplication unit, the inputs must be split into two different sections, high and low. High in this case refers to the upper half of a given input’s bits and low refers to the lower half. For this design, the multiplication units can be split up into four categories: low-low, high-low, low-high, and high-high. This ensures complete generation of all partial products prior to the final addition step. Once all partial products are generated, five addition units are used to propagate the correct product bits for the final result. For this research assignment, a generic n-bit ripple carry adder was designed for the addition unit of the narrow width multiplier so that each multiplication unit of varying bit widths could easily be generated. 
+
